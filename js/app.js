@@ -4,7 +4,7 @@ $('body').addClass("javascript")
 var fadeOnLoad = function(object) {
     object.each(function() {
         object.ready(function() {
-            object.delay(100).addClass("fadein")
+            object.delay(500).addClass("fadein")
         })
     });
 };
