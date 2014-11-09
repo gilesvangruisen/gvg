@@ -9,7 +9,7 @@
 }
 
 body {
-    display: block;
+    position: relative;
     font-family: "bree-serif", "Helvetica", sans-serif;
     font-size: 12px;
     line-height: 20px;
@@ -28,6 +28,8 @@ header, section, footer {
     position: relative;
 }
 
+
+
 section.item {
     padding: 50px 0;
     position: relative;
@@ -36,7 +38,7 @@ section.item {
 }
 
 div.container {
-    width: 1000px;
+    width: 1040px;
     padding: 0 50px;
     margin: auto;
 }
@@ -91,15 +93,21 @@ ul li a:hover, ul li a.on {
     border-width: 0 0 1px 0;
 }
 
-div.container .about {
+section .about {
     display: block;
     float: left;
-    max-width: 320px;
+    max-width: 360px;
 }
 
-div.container p.description {
-    font-size: 14px;
-    line-height: 24px;
+section .about h2 {
+    font-size: 21px;
+    margin-bottom: 16px;
+}
+
+
+section .about p.description {
+    font-size: 16px;
+    line-height: 26px;
     font-weight: 100;
 }
 
@@ -222,11 +230,6 @@ section.fetchnotes .preview a.fetchnotes-sharing {
         background: url(../img/fetchnotes/fetchnotes_sharing@2x.png) center center;
         background-size: 100% auto;
     }
-}
-
-section h2 {
-    font-size: 18px;
-    margin-bottom: 12px;
 }
 
 footer {
