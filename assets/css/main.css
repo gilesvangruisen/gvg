@@ -275,3 +275,30 @@ footer ul li a {
     margin-top: -40px;
     opacity: 0;
 }
+
+.javascript section .container .preview a.fadein, .javascript section .container .preview a.fadein:first-child, .javascript .about.fadein {
+    -webkit-animation: fade-in 800ms 0ms;
+    -moz-transition: opacity 500ms ease-in 0s;
+    -o-transition: opacity 500ms ease-in 0s;
+    transition: opacity 500ms ease-in 0s;
+    margin-top: 0px;
+    opacity: 1;
+}
+
+
+@-webkit-keyframes fade-in {
+  0%   { opacity: 0; margin-top: -40px; }
+  100% { opacity: 1; margin-top: 0px; }
+}
+@-moz-keyframes  {
+  0%   { opacity: 0; margin-top: -40px; }
+  100% { opacity: 1; margin-top: 0px; }
+}
+@-o-keyframes fade-in {
+  0%   { opacity: 0; margin-top: -40px; }
+  100% { opacity: 1; margin-top: 0px; }
+}
+@keyframes fade-in {
+  0%   { opacity: 0; margin-top: -40px; }
+  100% { opacity: 1; margin-top: 0px; }
+}

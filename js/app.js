@@ -4,11 +4,12 @@ $('body').addClass("javascript")
 var fadeOnLoad = function(object) {
     object.each(function() {
         object.ready(function() {
-            object.delay(100).animate({"opacity":1, "margin-top":0}, 800)
+            object.delay(100).addClass("fadein")
         })
     });
 };
 
-fadeOnLoad($(".preview a"))
-fadeOnLoad($(".about"))
-// fadeOnLoad($("section.luff .preview"))
+$(document).ready(function() {
+    fadeOnLoad($(".preview a"))
+    fadeOnLoad($(".about"))
+});
