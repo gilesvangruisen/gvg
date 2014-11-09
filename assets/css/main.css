@@ -6,14 +6,25 @@
     -webkit-appearance: none;
     text-decoration: none;
     box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+html {
+    overflow: scroll;
+    width: auto;
+    box-sizing: content-box;
+    -moz-box-sizing: content-box;
 }
 
 body {
-    position: relative;
+
     font-family: "bree-serif", "Helvetica", sans-serif;
     font-size: 12px;
     line-height: 20px;
     color: #fff;
+    width: auto;
+    box-sizing: content-box;
+    -moz-box-sizing: content-box;
 }
 
 .clear {
@@ -26,6 +37,8 @@ header, section, footer {
     display: block;
     width: 100%;
     position: relative;
+    margin: auto;
+    min-width: 1040px;
 }
 
 section.item {
@@ -44,7 +57,7 @@ div.container {
 header {
     display: block;
     background: #cd202d;
-    padding: 20px;
+    padding: 20px 0;
     height: 80px;
     color: #fff;
 }
