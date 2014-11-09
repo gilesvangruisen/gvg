@@ -1,0 +1,274 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    outline: 0px;
+    -webkit-appearance: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    display: block;
+    font-family: "bree-serif", "Helvetica", sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+}
+
+.clear {
+    display: block;
+    float: none;
+    clear: both;
+}
+
+header, section, footer {
+    display: block;
+    width: 100%;
+    position: relative;
+}
+
+section.item {
+    padding: 50px 0;
+    position: relative;
+    background-size: cover;
+    background: #232323;
+}
+
+div.container {
+    width: 1000px;
+    padding: 0 50px;
+    margin: auto;
+}
+
+header {
+    display: block;
+    background: #cd202d;
+    padding: 20px;
+    height: 80px;
+    color: #fff;
+}
+
+header h1 {
+    height: 40px;
+    float: left;
+}
+
+header h1 a {
+    height: 40px;
+    font-size: 21px;
+    line-height: 40px;
+    color: #fff;
+    font-weight: 500;
+}
+
+header ul {
+    float: right;
+    display: block;
+    height: 40px;
+}
+
+header ul li {
+    display: block;
+    height: 40px;
+    float: left;
+    margin-left: 16px;
+}
+
+header ul li a {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    margin: 5px 0;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 300;
+}
+
+ul li a:hover, ul li a.on {
+    padding-bottom: 1px;
+    border: 1px solid #fff;
+    border-width: 0 0 1px 0;
+}
+
+div.container .about {
+    display: block;
+    float: left;
+    max-width: 320px;
+}
+
+div.container p.description {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 100;
+}
+
+section .preview {
+    display: block;
+    float: right;
+    width: 500px;
+}
+
+section.luff {
+    padding: 80px 0;
+    background: url(../img/background_stata_blur_1440.jpg) center center;
+}
+section.luff a.preview {
+    text-indent: -9999px;
+    background: url(../img/iphone_6_landscape.png) center center;
+    background-size: 100% auto;
+    height: 240px;
+}
+
+section.thready {
+    padding: 80px 0;
+    background: url(../img/background_thready_1440.jpg) center center;
+}
+
+section.thready .preview {
+    height: 312px;
+}
+
+section.thready .preview a {
+    display: block;
+    width: 150px;
+    height: 312px;
+    float: left;
+    margin-left: 25px;
+    background-size: 100% auto;
+    text-indent: -9999px;
+}
+
+section.thready .preview a:first-child {
+    margin: 0;
+}
+
+section.thready .preview a.thready-spaces {
+    background: url(../img/thready/thready_spaces.png) center center;
+}
+
+section.thready .preview a.thready-space {
+    background: url(../img/thready/thready_space.png) center center;
+}
+
+section.thready .preview a.thready-thread {
+    background: url(../img/thready/thready_thread.png) center center;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),  (min-resolution: 192dpi) {
+    section.thready .preview a.thready-spaces {
+        background: url(../img/thready/thready_spaces@2x.png) center center;
+        background-size: 100% auto;
+    }
+
+    section.thready .preview a.thready-space {
+        background: url(../img/thready/thready_space@2x.png) center center;
+        background-size: 100% auto;
+    }
+
+    section.thready .preview a.thready-thread {
+        background: url(../img/thready/thready_thread@2x.png) center center;
+        background-size: 100% auto;
+    }
+}
+
+section.fetchnotes {
+    padding: 80px 0;
+    background: url(../img/background_fetchnotes_1440.jpg) center center;
+}
+
+section.fetchnotes .preview {
+    height: 315px;
+}
+
+section.fetchnotes .preview a {
+    display: block;
+    width: 150px;
+    height: 315px;
+    float: left;
+    margin-left: 25px;
+    background-size: 100% auto;
+    text-indent: -9999px;
+}
+
+section.fetchnotes .preview a:first-child {
+    margin: 0;
+}
+
+section.fetchnotes .preview a.fetchnotes-feed {
+    background: url(../img/fetchnotes/fetchnotes_feed.png) center center;
+}
+
+section.fetchnotes .preview a.fetchnotes-create {
+    background: url(../img/fetchnotes/fetchnotes_create.png) center center;
+}
+
+section.fetchnotes .preview a.fetchnotes-sharing {
+    background: url(../img/fetchnotes/fetchnotes_sharing.png) center center;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),  (min-resolution: 192dpi) {
+    section.fetchnotes .preview a.fetchnotes-feed {
+        background: url(../img/fetchnotes/fetchnotes_feed@2x.png) center center;
+        background-size: 100% auto;
+    }
+
+    section.fetchnotes .preview a.fetchnotes-create {
+        background: url(../img/fetchnotes/fetchnotes_create@2x.png) center center;
+        background-size: 100% auto;
+    }
+
+    section.fetchnotes .preview a.fetchnotes-sharing {
+        background: url(../img/fetchnotes/fetchnotes_sharing@2x.png) center center;
+        background-size: 100% auto;
+    }
+}
+
+section h2 {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+footer {
+    display: block;
+    background: #cd202d;
+    padding: 20px;
+    height: 80px;
+    color: #fff;
+    font-weight: 300;
+}
+
+footer p.copyright {
+    float: left;
+    display: block;
+    height: 30px;
+    margin: 5px 0;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+footer ul {
+    float: right;
+    display: block;
+    height: 40px;
+}
+
+footer ul li {
+    display: inline;
+    height: 40px;
+    float: left;
+    margin-left: 16px;
+}
+
+footer ul li a {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    margin: 5px 0;
+    color: #fff;
+    font-size: 14px;
+}
+
+footer ul li a:hover {
+
+}

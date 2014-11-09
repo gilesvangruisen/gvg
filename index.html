@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="App">
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -19,48 +19,85 @@
 
     <header>
         <div class="container">
-            <h1>Giles Van Gruisen</h1>
-            <ul>
+            <h1><a href="http://gilesvangruisen.com/">Giles Van Gruisen</a></h1>
+            <ul class="header-links">
+                <li><a href="http://gilesvangruisen.com/">Blog</a></li>
+                <li><a href="http://work.gilesvangruisen.com/" class="on">Selected Work</a></li>
+                <li><a href="http://twitter.com/gilesvangruisen">Twitter</a></li>
+                <li><a href="http://github.com/gilesvangruisen">GitHub</a></li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+    </header>
+
+    <section class="item thready">
+        <div class="container">
+            <div class="about">
+                <h2>Thready for iPhone</h2>
+                <p class="description">I worked with another designer and personally led development of Thready for iPhone. Thready is a private discussion platform that lets small groups communicate with ease. I helped architect and implement an API wrapper as well as a thin caching layer to both interact with and store data from the Node server. From there, I built a ReactiveCocoa and MVVM-powered card system with a custom navigation controller to allow for quick UI updates and transitions. All of this helped result in a robust, snappy communications app.</p>
+            </div>
+            <div class="preview">
+                <a href="/assets/img/thready/thready_spaces_full.png" class="thready-spaces">Spaces List View</a>
+                <a href="/assets/img/thready/thready_space_full.png" class="thready-space">Space View</a>
+                <a href="/assets/img/thready/thready_thread_full.png" class="thready-thread">Thread View</a>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </section>
+
+    <section class="item luff">
+        <div class="container">
+            <div class="about">
+                <h2>Luff for iPhone</h2>
+                <p class="description">I designed and built Luff for iPhone as a way to teach myself Swift and play with iOS 8’s new camera APIs. I wanted a manual photography app that used sliders to allow the user to get just the right exposure, focus, ISO, and zoom from anywhere on the image preview. That means the default slider would not work, so I implemented a custom slider with variable sensitivity that depends on the distance between the user's finger and the slider.</p>
+            </div>
+            <a href="http://luff.io/" class="preview">Luff for iPhone</a>
+            <div class="clear"></div>
+        </div>
+    </section>
+
+    <section class="item fetchnotes">
+        <div class="container">
+            <div class="about">
+                <h2>Fetchnotes for iPhone</h2>
+                <p class="description">I helped design and build Fetchnotes for iPhone, a dead simple note-taking app that uses hashtags for organization and @tags for sharing. Because it's a hybrid HTML/Javascript app (built on Trigger.io), a lot of my work included writing modules to expose native Cocoa Touch APIs to the AngularJS app in order to provide additional functionality and an overall better experience for our users.</p>
+            </div>
+            <div class="preview">
+                <a href="/assets/img/fetchnotes/fetchnotes_feed_full.png" class="fetchnotes-feed">Feed View</a>
+                <a href="/assets/img/fetchnotes/fetchnotes_create_full.png" class="fetchnotes-create">Creation View</a>
+                <a href="/assets/img/fetchnotes/fetchnotes_sharing_full.png" class="fetchnotes-sharing">Sharing View</a>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </section>
+
+    <!-- section class="item peddler">
+        <div class="container">
+            <div class="about">
+                <h2>Peddler Co.</h2>
+                <p class="description">I designed and prototyped a mobile e-commerce solution with a focus on fashion and apparel. Peddler lets users browse apparel and accessories, learning each person's taste from a stream of likes and dislikes. I learned a lot about app architecture and custom UI while building the native iOS interface to a Rails-powered backend.</p>
+            </div>
+            <div class="preview">
+                <a href="http://fetchnotes.com/" class="peddler-web">Peddler Co. on the web</a>
+                <a href="http://fetchnotes.com/" class="peddler-ios">Peddler Co. for iOS</a>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </section -->
+
+    <footer>
+        <div class="container">
+            <p class="copyright">&copy; Giles Van Gruisen 2014</p>
+            <ul class="footer-links">
                 <li><a href="http://gilesvangruisen.com/">Blog</a></li>
                 <li><a href="http://gilesvangruisen.com/" class="on">Selected Work</a></li>
                 <li><a href="http://twitter.com/gilesvangruisen">Twitter</a></li>
                 <li><a href="http://github.com/gilesvangruisen">GitHub</a></li>
             </ul>
         </div>
-    </header>
+    </footer>
 
-    <section class="item luff">
-        <div class="container">
-            <h2>Luff for iPhone</h2>
-            <p class="description">I designed and built Luff for iPhone as a way to teach myself Swift and play with iOS 8’s new camera APIs. I wanted a simple manual photography app with sliders that allow the user to get just the right exposure, focus, ISO, and zoom. To do this, I implemented a custom slider that adjusts becomes more or less sensitive depending on the distance between the user's finger and the slider.</p>
-            <a href="http://luff.io/" class="luff-preview">Luff for iPhone</a>
-        </div>
-    </section>
-
-    <section class="item thready">
-        <div class="container">
-            <h2>Thready for iPhone</h2>
-            <p class="description">I worked with another designer and personally led development of Thready for iPhone. Thready is a private discussion platform that lets small groups communicate with ease. I helped architect and implement a framework as well as a thin caching layer to interact with the Node server. Combining this with the MVVM powered card system (h/t ReactiveCocoa) resulted in a robust, snappy communication app.</p>
-            <a href="#" class="thready-preview">Thready for iPhone</a>
-        </div>
-    </section>
-
-    <section class="item fetchnotes">
-        <div class="container">
-            <h2>Fetchnotes for iPhone</h2>
-            <p class="description">I helped design and build Fetchnotes for iPhone, a dead simple note-taking app that uses hashtags for organization and @tags for sharing. Because it's a hybrid app (built on Trigger.io), a lot of my work included writing modules to expose native iOS APIs to the AngularJS app in order to provide additional functionality and an overall better experience for our users.</p>
-            <a href="http://fetchnotes.com/" class="fetchnotes-preview">Fetchnotes for iPhone</a>
-        </div>
-    </section>
-
-    <section class="item peddler">
-        <div class="container">
-            <h2>Peddler Co.</h2>
-            <p class="description">I designed and prototyped a mobile e-commerce solution with a focus on fashion and apparel. Peddler lets users browse apparel and accessories, learning each person's taste from a stream of likes and dislikes. I learned a lot about app architecture and custom UI while building the native iOS interface to a Rails-powered backend.</p>
-            <a href="http://fetchnotes.com/" class="peddler-web">Peddler Co. on the web</a>
-            <a href="http://fetchnotes.com/" class="peddler-ios">Peddler Co. for iOS</a>
-        </div>
-    </section>
-
+    <script src="/js/app.js"></script>
 </body>
 </html>
